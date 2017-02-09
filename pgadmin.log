@@ -1,0 +1,524 @@
+2016-08-09 11:32:40 ERROR  : ERRO:  erro de sintaxe em ou próximo a "'PESSOAS'"
+LINE 1: CREATE TABLE 'PESSOAS' (
+                     ^
+2016-08-09 11:34:49 ERROR  : ERRO:  erro de sintaxe em ou próximo a "'MATRICULA'"
+LINE 2: INT 'MATRICULA',
+            ^
+2016-08-09 11:35:26 ERROR  : ERRO:  tipo "matricula" não existe
+LINE 2: INT MATRICULA,
+            ^
+2016-08-09 11:35:57 ERROR  : ERRO:  erro de sintaxe em ou próximo a "'MATRICULA'"
+LINE 2: INT 'MATRICULA',
+            ^
+2016-08-10 09:25:44 ERROR  : ERRO:  relação "empresa" já existe
+2016-08-10 09:53:45 ERROR  : ERRO:  erro de sintaxe em ou próximo a "("
+LINE 4: NOTA DOUBLE PRECISION(3),
+                             ^
+2016-08-10 10:07:57 ERROR  : ERRO:  relação "pessoas" não existe
+2016-08-10 10:08:15 ERROR  : ERRO:  relação "pessoas" já existe
+2016-08-10 10:08:38 ERROR  : ERRO:  relação "pessoas" não existe
+2016-08-10 10:10:34 ERROR  : ERRO:  relação "pessoas" não existe
+2016-08-10 10:10:35 ERROR  : ERRO:  relação "pessoas" não existe
+2016-08-10 10:24:35 ERROR  : ERRO:  erro de sintaxe em ou próximo a "EMPRESA"
+LINE 7: FOREIGN KEY EMPRESA REFERENCES EMPRESA(EMPRESA),
+                    ^
+2016-08-10 10:25:38 ERROR  : ERRO:  erro de sintaxe em ou próximo a "EMPRESA"
+LINE 7: FOREIGN KEY EMPRESA REFERENCES TESTE.EMPRESA(EMPRESA),
+                    ^
+2016-08-10 10:27:09 ERROR  : ERRO:  erro de sintaxe em ou próximo a "DEPARTAMENTO"
+LINE 7: FOREIGN KEY DEPARTAMENTO REFERENCES TESTE.DEPARTAMENTO(DEPAR...
+                    ^
+2016-08-10 11:27:01 ERROR  : ERRO:  relação "importacao" não existe
+2016-08-10 11:27:41 ERROR  : ERRO:  não pôde abrir arquivo "C:\Users\admin\Documents\processos seletivos\importacao\emp_dep.csv" para leitura: Permission denied
+2016-08-10 11:30:13 ERROR  : ERRO:  duplicar valor da chave viola a restrição de unicidade "empresa_pkey"
+DETAIL:  Chave (empresa)=(global ) já existe.
+2016-08-10 11:37:01 ERROR  : ERRO:  coluna "matricula" é do tipo numeric mas expressão é do tipo character varying
+LINE 2: ...amento, importacao.descricao, importacao.empresa, importacao...
+                                                             ^
+HINT:  Você precisará reescrever ou converter a expressão.
+2016-08-10 11:37:56 ERROR  : ERRO:  duplicar valor da chave viola a restrição de unicidade "departamento_pkey"
+DETAIL:  Chave (departamento)=(rh) já existe.
+2016-08-10 11:41:55 ERROR  : ERRO:  erro de sintaxe em ou próximo a "DELETE"
+LINE 1: ALTER TABLE TESTE.DEPARTAMENTO DELETE PRIMARY KEY
+                                       ^
+2016-08-10 11:42:54 ERROR  : ERRO:  não pode remover tabela teste.departamento porque outros objetos dependem dele
+DETAIL:  restrição dep_metas_departamento_fkey em tabela teste.dep_metas depende de tabela teste.departamento
+HINT:  Utilize DROP ... CASCADE para remover os objetos dependentes também.
+2016-08-10 11:45:04 ERROR  : ERRO:  chaves primárias múltiplas na tabela "departamento" não são permitidas
+2016-08-10 12:04:05 ERROR  : ERRO:  chaves primárias múltiplas na tabela "departamento" não são permitidas
+2016-08-10 12:21:29 ERROR  : ERRO:  chaves primárias múltiplas na tabela "departamento" não são permitidas
+2016-08-10 12:21:30 ERROR  : ERRO:  chaves primárias múltiplas na tabela "departamento" não são permitidas
+2016-08-10 12:23:09 ERROR  : ERRO:  chaves primárias múltiplas na tabela "departamento" não são permitidas
+2016-08-10 12:23:10 ERROR  : ERRO:  chaves primárias múltiplas na tabela "departamento" não são permitidas
+2016-08-10 12:23:11 ERROR  : ERRO:  chaves primárias múltiplas na tabela "departamento" não são permitidas
+2016-08-10 12:25:30 ERROR  : ERRO:  não pode remover restrição pessoas_pkey em tabela teste.pessoas porque outros objetos dependem dele
+DETAIL:  restrição aval_matricula_fkey em tabela teste.aval depende de índice teste.pessoas_pkey
+restrição departamento_matricula_fkey em tabela teste.departamento depende de índice teste.pessoas_pkey
+HINT:  Utilize DROP ... CASCADE para remover os objetos dependentes também.
+2016-08-10 12:25:35 ERROR  : ERRO:  não pode remover restrição pessoas_pkey em tabela teste.pessoas porque outros objetos dependem dele
+DETAIL:  restrição aval_matricula_fkey em tabela teste.aval depende de índice teste.pessoas_pkey
+restrição departamento_matricula_fkey em tabela teste.departamento depende de índice teste.pessoas_pkey
+HINT:  Utilize DROP ... CASCADE para remover os objetos dependentes também.
+2016-08-10 12:27:31 ERROR  : ERRO:  não pode remover restrição pessoas_pkey em tabela teste.pessoas porque outros objetos dependem dele
+DETAIL:  restrição departamento_matricula_fkey em tabela teste.departamento depende de índice teste.pessoas_pkey
+HINT:  Utilize DROP ... CASCADE para remover os objetos dependentes também.
+2016-08-10 12:28:19 ERROR  : ERRO:  não pode remover restrição pessoas_pkey em tabela teste.pessoas porque outros objetos dependem dele
+DETAIL:  restrição departamento_matricula_fkey em tabela teste.departamento depende de índice teste.pessoas_pkey
+HINT:  Utilize DROP ... CASCADE para remover os objetos dependentes também.
+2016-08-10 12:30:32 ERROR  : ERRO:  não há restrição de unicidade que corresponde com as colunas informadas na tabela referenciada "departamento"
+2016-08-10 12:32:27 ERROR  : ERRO:  número de colunas que referenciam e são referenciadas em um chave estrangeira não correspondem
+2016-08-10 12:32:30 ERROR  : ERRO:  número de colunas que referenciam e são referenciadas em um chave estrangeira não correspondem
+2016-08-10 12:39:08 ERROR  : ERRO:  erro de sintaxe em ou próximo a "FOREIGN"
+LINE 10: FOREIGN KEY (EMPRESA) REFERENCES TESTE.EMPRESA(EMPRESA)
+         ^
+2016-08-10 12:39:29 ERROR  : ERRO:  não há restrição de unicidade que corresponde com as colunas informadas na tabela referenciada "departamento"
+2016-08-10 12:40:36 ERROR  : ERRO:  erro de sintaxe em ou próximo a "TESTE"
+LINE 7: ...ENTO) REFERENCES TESTE.DEPARTAMENTO(DEPARTAMENTO) TESTE.EMPR...
+                                                             ^
+2016-08-10 12:40:59 ERROR  : ERRO:  erro de sintaxe em ou próximo a "AND"
+LINE 7: ...ENTO) REFERENCES TESTE.DEPARTAMENTO(DEPARTAMENTO) AND TESTE....
+                                                             ^
+2016-08-10 12:52:57 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 12:54:31 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 12:57:44 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 13:06:41 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 13:11:35 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(global) não está presente na tabela "empresa".
+2016-08-10 13:13:32 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 13:13:33 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 13:16:37 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 13:17:04 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 13:17:48 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(global) não está presente na tabela "empresa".
+2016-08-10 13:20:27 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 13:22:06 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_matricula_fkey"
+DETAIL:  Chave (matricula)=(11) não está presente na tabela "pessoas".
+2016-08-10 13:26:04 ERROR  : ERRO:  relação "importacao" não existe
+2016-08-10 13:26:39 ERROR  : ERRO:  erro de sintaxe em ou próximo a "REATE"
+LINE 1: REATE TABLE importacao (matricula character varying, nome ch...
+        ^
+2016-08-10 13:27:33 ERROR  : ERRO:  faltando entrada para tabela "impotacao" na cláusula FROM
+LINE 1: ...o.matricula, importacao.nome, importacao.empresa, impotacao....
+                                                             ^
+2016-08-10 13:34:31 ERROR  : ERRO:  coluna "matricula" é do tipo numeric mas expressão é do tipo character varying
+LINE 2: SELECT importacao.matricula, importacao.nome, importacao.emp...
+               ^
+HINT:  Você precisará reescrever ou converter a expressão.
+2016-08-10 13:35:07 ERROR  : ERRO:  inserção ou atualização em tabela "pessoas" viola restrição de chave estrangeira "pessoas_empresa_fkey"
+DETAIL:  Chave (empresa)=(global) não está presente na tabela "empresa".
+2016-08-10 13:39:05 ERROR  : ERRO:  relação "pessoas" não existe
+LINE 1: SELECT *FROM PESSOAS WHERE EMPRESA = 'global'
+                     ^
+2016-08-10 13:42:53 ERROR  : ERRO:  erro de sintaxe em ou próximo a "2012"
+LINE 1: ...TE TABLE importacao (matricula character varying, 2012 chara...
+                                                             ^
+2016-08-10 13:47:32 ERROR  : ERRO:  erro de sintaxe em ou próximo a ".2012"
+LINE 1: SELECT '2012', importacao.matricula, importacao.2012
+                                                       ^
+2016-08-10 13:48:33 ERROR  : ERRO:  coluna "matricula" é do tipo numeric mas expressão é do tipo character varying
+LINE 2: SELECT '2012', importacao.matricula, importacao.dois
+                       ^
+HINT:  Você precisará reescrever ou converter a expressão.
+2016-08-10 13:49:44 ERROR  : ERRO:  coluna "nota" é do tipo real mas expressão é do tipo character varying
+LINE 2: ...CT '2012', CAST(importacao.matricula AS NUMERIC), importacao...
+                                                             ^
+HINT:  Você precisará reescrever ou converter a expressão.
+2016-08-10 13:50:41 ERROR  : ERRO:  duplicar valor da chave viola a restrição de unicidade "aval_pkey"
+DETAIL:  Chave (periodo)=(2012) já existe.
+2016-08-10 14:27:10 ERROR  : ERRO:  relação "importacao" não existe
+2016-08-10 14:27:39 ERROR  : ERRO:  coluna "periodo" da relação "pessoas" não existe
+LINE 1: INSERT INTO teste.pessoas (periodo, empresa, meta)
+                                   ^
+2016-08-10 14:29:12 ERROR  : ERRO:  coluna "meta" é do tipo real mas expressão é do tipo character varying
+LINE 2: SELECT '2012', importacao.empresa, importacao.dois 
+                                           ^
+HINT:  Você precisará reescrever ou converter a expressão.
+2016-08-10 14:30:16 ERROR  : ERRO:  duplicar valor da chave viola a restrição de unicidade "emp_metas_pkey"
+DETAIL:  Chave (periodo)=(2012) já existe.
+2016-08-10 14:31:39 ERROR  : ERRO:  duplicar valor da chave viola a restrição de unicidade "emp_metas_pkey"
+DETAIL:  Chave (periodo)=(2013) já existe.
+2016-08-10 14:33:56 ERROR  : ERRO:  inserção ou atualização em tabela "emp_metas" viola restrição de chave estrangeira "emp_metas_empresa_fkey"
+DETAIL:  Chave (empresa)=(global ) não está presente na tabela "empresa".
+2016-08-10 14:41:29 ERROR  : ERRO:  relação "importacao" não existe
+2016-08-10 14:44:29 ERROR  : ERRO:  coluna "periodo" da relação "pessoas" não existe
+LINE 1: INSERT INTO teste.pessoas (periodo, empresa, departamento, m...
+                                   ^
+2016-08-10 14:56:58 ERROR  : ERRO:  inserção ou atualização em tabela "dep_metas" viola restrição de chave estrangeira "dep_metas_empresa_fkey"
+DETAIL:  Chave (empresa)=(global ) não está presente na tabela "empresa".
+2016-08-10 15:00:19 ERROR  : ERRO:  inserção ou atualização em tabela "dep_metas" viola restrição de chave estrangeira "dep_metas_departamento_fkey"
+DETAIL:  Chave (departamento)=(ti) não está presente na tabela "departamento".
+2016-08-10 15:01:22 ERROR  : ERRO:  inserção ou atualização em tabela "dep_metas" viola restrição de chave estrangeira "dep_metas_departamento_fkey"
+DETAIL:  Chave (departamento)=(ti) não está presente na tabela "departamento".
+2016-08-10 15:06:27 ERROR  : ERRO:  inserção ou atualização em tabela "dep_metas" viola restrição de chave estrangeira "dep_metas_departamento_fkey"
+DETAIL:  Chave (departamento)=(ti) não está presente na tabela "departamento".
+2016-08-10 15:07:56 ERROR  : ERRO:  número de colunas que referenciam e são referenciadas em um chave estrangeira não correspondem
+2016-08-10 15:16:55 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 18:52:11 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-08-10 18:58:34 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-08-10 19:01:41 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-08-10 19:06:34 ERROR  : ERRO:  faltando entrada para tabela "empresa" na cláusula FROM
+LINE 4: WHERE importacao.empresa = empresa.empresa
+                                   ^
+2016-08-10 19:07:06 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:08:35 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:08:36 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:08:48 ERROR  : ERRO:  faltando entrada para tabela "empresa" na cláusula FROM
+LINE 4: WHERE importacao.empresa = empresa.empresa
+                                   ^
+2016-08-10 19:09:20 ERROR  : ERRO:  faltando entrada para tabela "empresa" na cláusula FROM
+LINE 3: WHERE importacao.empresa = empresa.empresa
+                                   ^
+2016-08-10 19:10:02 ERROR  : ERRO:  faltando entrada para tabela "departamento" na cláusula FROM
+LINE 3: WHERE departamento.empresa = empresa.empresa
+              ^
+2016-08-10 19:13:29 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:18:08 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:20:41 ERROR  : ERRO:  faltando entrada para tabela "departamento" na cláusula FROM
+LINE 4: AND departamento.departamento IS NULL
+            ^
+2016-08-10 19:23:02 ERROR  : ERRO:  referência inválida para tabela "importacao" na cláusula FROM
+LINE 3: INNER JOIN teste.empresa ON importacao.empresa = empresa.emp...
+                                    ^
+HINT:  Há uma entrada para tabela "importacao", mas ela não pode ser referenciada desta parte da consulta.
+2016-08-10 19:30:49 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:30:50 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:30:52 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:30:52 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:30:52 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:30:52 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:33:59 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:34:38 ERROR  : ERRO:  nome da tabela "empresa" foi especificado mais de uma vez
+2016-08-10 19:35:06 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:40:27 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-10 19:41:14 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(global) não está presente na tabela "empresa".
+2016-08-11 10:53:09 ERROR  : ERRO:  relação "empresa" já existe
+2016-08-11 10:53:23 ERROR  : ERRO:  relação "empresa" já existe
+2016-08-11 10:54:23 ERROR  : ERRO:  relação "empresa" já existe
+2016-08-11 10:55:30 ERROR  : ERRO:  esquema "teste" não existe
+2016-08-11 10:57:42 ERROR  : ERRO:  relação "importacao" já existe
+2016-08-11 11:00:02 ERROR  : ERRO:  nome da tabela "empresa" foi especificado mais de uma vez
+2016-08-11 11:00:23 ERROR  : ERRO:  erro de sintaxe em ou próximo a "JOIN"
+LINE 5: INNER JOIN teste.empresa ON IMPORTACAO.empresa = empresa.emp...
+              ^
+2016-08-11 11:00:45 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna) não está presente na tabela "empresa".
+2016-08-11 11:01:50 ERROR  : ERRO:  faltando entrada para tabela "importacao" na cláusula FROM
+LINE 1: SELECT *FROM EMPRESA WHERE IMPORTACAO.empresa = empresa.empr...
+                                   ^
+2016-08-11 11:07:10 ERROR  : ERRO:  relação "empresa" já existe
+2016-08-11 11:08:40 ERROR  : ERRO:  coluna "empresa" é do tipo integer mas expressão é do tipo text
+LINE 2: SELECT DISTINCT TRIM(importacao.empresa), importacao.razao 
+                        ^
+HINT:  Você precisará reescrever ou converter a expressão.
+2016-08-11 11:10:12 ERROR  : ERRO:  valor é muito longo para tipo character(1)
+2016-08-11 11:12:52 ERROR  : ERRO:  erro de sintaxe em ou próximo a "NSERT"
+LINE 1: NSERT INTO teste.departamento (departamento, nome, empresa, ...
+        ^
+2016-08-11 11:12:58 ERROR  : ERRO:  erro de sintaxe em ou próximo a "SELECT"
+LINE 4: INNER JOIN teste.empresa ON SELECT *FROM EMPRESA,IMPORTACAO ...
+                                    ^
+2016-08-11 11:14:45 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(global    ) não está presente na tabela "empresa".
+2016-08-11 11:15:52 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(global    ) não está presente na tabela "empresa".
+2016-08-11 11:20:57 ERROR  : ERRO:  erro de sintaxe em ou próximo a "NSERT"
+LINE 1: NSERT INTO teste.departamento (departamento, nome, empresa, ...
+        ^
+2016-08-11 11:21:05 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(global    ) não está presente na tabela "empresa".
+2016-08-11 11:21:47 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(global    ) não está presente na tabela "empresa".
+2016-08-11 11:22:20 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(global    ) não está presente na tabela "empresa".
+2016-08-11 11:22:22 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(global    ) não está presente na tabela "empresa".
+2016-08-11 11:22:38 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(global    ) não está presente na tabela "empresa".
+2016-08-11 11:22:51 ERROR  : ERRO:  inserção ou atualização em tabela "departamento" viola restrição de chave estrangeira "departamento_empresa_fkey"
+DETAIL:  Chave (empresa)=(magna     ) não está presente na tabela "empresa".
+2016-08-11 11:34:41 ERROR  : ERRO:  relação "teste.departamento" não existe
+LINE 1: INSERT INTO teste.departamento (departamento, nome, empresa,...
+                    ^
+2016-08-11 12:15:44 ERROR  : ERRO:  relação "importacao" já existe
+2016-08-11 12:19:05 ERROR  : ERRO:  tabela "importacao" não existe
+2016-08-11 12:59:33 ERROR  : ERRO:  faltando entrada para tabela "a" na cláusula FROM
+LINE 1: SELECT empresa FROM teste.pessoas WHERE a.matricula = pessoa...
+                                                ^
+2016-08-11 13:02:16 ERROR  : ERRO:  coluna "em.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT em.periodo, em.empresa, em.meta, AVG(a.nota)
+               ^
+2016-08-11 13:02:40 ERROR  : ERRO:  coluna "em.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT em.periodo, em.empresa, em.meta, AVG(a.nota)
+               ^
+2016-08-11 13:03:23 ERROR  : ERRO:  erro de sintaxe em ou próximo a "GROUP"
+LINE 5: GROUP BY EM.EMPRESA
+        ^
+2016-08-11 13:06:05 ERROR  : ERRO:  erro de sintaxe em ou próximo a "GROUP"
+LINE 5: GROUP BY em.empresa
+        ^
+2016-08-11 13:06:15 ERROR  : ERRO:  erro de sintaxe em ou próximo a "GROUP"
+LINE 5: GROUP BY em.empresa
+        ^
+2016-08-11 13:06:39 ERROR  : ERRO:  coluna "em.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT em.periodo, em.empresa, em.meta, AVG(a.nota)
+               ^
+2016-08-11 13:07:11 ERROR  : ERRO:  erro de sintaxe em ou próximo a "GROUP"
+LINE 5: GROUP BY em.periodo
+        ^
+2016-08-11 13:07:16 ERROR  : ERRO:  coluna "em.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT em.periodo, em.empresa, em.meta, AVG(a.nota)
+               ^
+2016-08-11 13:07:53 ERROR  : ERRO:  argumento do AND deve ser do tipo boolean, e não do tipo numeric
+LINE 4: GROUP BY em.periodo AND em.empresa
+                 ^
+2016-08-11 13:08:14 ERROR  : ERRO:  coluna "em.empresa" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT em.periodo, em.empresa, em.meta, AVG(a.nota)
+                           ^
+2016-08-11 13:08:41 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 13:08:52 ERROR  : ERRO:  coluna "em.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT em.periodo, em.empresa, em.meta, AVG(a.nota)
+               ^
+2016-08-11 13:09:00 ERROR  : ERRO:  coluna "em.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT em.periodo, em.empresa, em.meta, AVG(a.nota)
+               ^
+2016-08-11 13:09:51 ERROR  : ERRO:  coluna "em.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT em.periodo, em.empresa, em.meta, AVG(a.nota)
+               ^
+2016-08-11 13:10:09 ERROR  : ERRO:  coluna "em.empresa" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT em.periodo, em.empresa, em.meta, AVG(a.nota)
+                           ^
+2016-08-11 13:10:59 ERROR  : ERRO:  coluna "em.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT em.periodo, em.empresa, em.meta, AVG(a.nota)
+               ^
+2016-08-11 13:18:16 ERROR  : ERRO:  coluna "em.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT em.periodo, em.empresa, em.meta, AVG(a.nota) media
+               ^
+2016-08-11 13:26:38 ERROR  : ERRO:  relação "aval" não existe
+LINE 1: select*from aval
+                    ^
+2016-08-11 13:26:46 ERROR  : ERRO:  relação "aval" não existe
+LINE 1: select * from aval
+                      ^
+2016-08-11 13:28:15 ERROR  : ERRO:  faltando entrada para tabela "a" na cláusula FROM
+LINE 1: SELECT  AVG(a.nota) media, periodo
+                    ^
+2016-08-11 13:28:21 ERROR  : ERRO:  coluna "a.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT  AVG(a.nota) media, periodo
+                                   ^
+2016-08-11 13:28:30 ERROR  : ERRO:  coluna "a.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT  AVG(a.nota) media, a.periodo
+                                   ^
+2016-08-11 13:31:17 ERROR  : ERRO:  referência à coluna "periodo" é ambígua
+LINE 3: GROUP BY PERIODO
+                 ^
+2016-08-11 13:32:08 ERROR  : ERRO:  coluna e.perido não existe
+LINE 3: WHERE e.perido = a.periodo
+              ^
+2016-08-11 13:32:22 ERROR  : ERRO:  coluna "a.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT  AVG(a.nota) media, a.periodo, e.empresa, e.meta
+                                   ^
+2016-08-11 13:32:44 ERROR  : ERRO:  coluna "e.empresa" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT  AVG(a.nota) media, a.periodo, e.empresa, e.meta
+                                              ^
+2016-08-11 13:33:18 ERROR  : ERRO:  erro de sintaxe em ou próximo a "GROUP"
+LINE 5: GROUP BY a.periodo
+        ^
+2016-08-11 13:33:38 ERROR  : ERRO:  coluna "e.empresa" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT  AVG(a.nota) media, a.periodo, e.empresa, e.meta
+                                              ^
+2016-08-11 13:34:10 ERROR  : ERRO:  argumento do AND deve ser do tipo boolean, e não do tipo numeric
+LINE 4: GROUP BY a.periodo and e.empresa
+                 ^
+2016-08-11 13:34:45 ERROR  : ERRO:  coluna "e.meta" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT  AVG(a.nota) media, a.periodo, e.empresa, e.meta
+                                                         ^
+2016-08-11 13:41:20 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 13:42:35 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 13:55:07 ERROR  : ERRO:  referência à coluna "matricula" é ambígua
+LINE 3: ...do = a.periodo AND a.matricula = (SELECT DISTINCT matricula ...
+                                                             ^
+2016-08-11 13:55:26 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 13:57:51 ERROR  : ERRO:  coluna "e.empresa" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT a.periodo, e.empresa, e.meta, AVG(a.nota) media
+                          ^
+2016-08-11 13:58:21 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 13:59:15 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 13:59:39 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:00:42 ERROR  : ERRO:  coluna "a.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT a.periodo, e.meta, AVG(a.nota) media
+               ^
+2016-08-11 14:00:52 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:02:49 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:04:02 ERROR  : ERRO:  coluna "a.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT a.periodo, e.meta, AVG(a.nota) media
+               ^
+2016-08-11 14:05:32 ERROR  : ERRO:  coluna "e.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT e.periodo, e.meta, AVG(a.nota) media
+               ^
+2016-08-11 14:05:39 ERROR  : ERRO:  coluna "e.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT e.periodo, e.meta, AVG(a.nota) media
+               ^
+2016-08-11 14:05:53 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:08:56 ERROR  : ERRO:  coluna "e.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT e.periodo, e.meta, AVG(a.nota) media
+               ^
+2016-08-11 14:09:36 ERROR  : ERRO:  coluna "e.meta" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT e.periodo, e.meta, AVG(a.nota) media
+                          ^
+2016-08-11 14:09:57 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:11:10 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:11:47 ERROR  : ERRO:  coluna "a.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT  AVG(a.nota) media, a.periodo
+                                   ^
+2016-08-11 14:12:04 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:14:15 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:14:24 ERROR  : ERRO:  coluna "a.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT  AVG(a.nota) media, a.periodo
+                                   ^
+2016-08-11 14:14:33 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:14:56 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:51:10 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:55:03 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:55:30 ERROR  : ERRO:  coluna "a.nota" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT e.periodo, e.meta, a.nota media
+                                  ^
+2016-08-11 14:55:56 ERROR  : ERRO:  coluna "a.nota" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT e.periodo, e.meta, a.nota media
+                                  ^
+2016-08-11 14:56:08 ERROR  : ERRO:  coluna "a.nota" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT e.periodo, e.meta, a.nota media
+                                  ^
+2016-08-11 14:56:25 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 14:59:25 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 15:00:37 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 15:03:32 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 15:04:59 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 15:06:11 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 15:07:38 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 15:11:55 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 15:13:31 ERROR  : ERRO:  erro de sintaxe em ou próximo a "c1"
+LINE 1: c1 = SELECT DISTINCT aval.matricula FROM teste.aval,teste.pe...
+        ^
+2016-08-11 15:29:18 ERROR  : ERRO:  erro de sintaxe em ou próximo a "BETWEN"
+LINE 4: AND a.matricula BETWEN '1' AND 10
+                        ^
+2016-08-11 15:32:36 ERROR  : ERRO:  erro de sintaxe em ou próximo a "O"
+LINE 4: AND a.matricula BETWEEN '1' AND '10' O
+                                             ^
+2016-08-11 15:33:06 ERROR  : ERRO:  sintaxe de entrada é inválida para tipo boolean: "21"
+LINE 4: AND a.matricula BETWEEN '1' AND '10' OR '21' AND '30'
+                                                ^
+2016-08-11 15:33:31 ERROR  : ERRO:  erro de sintaxe em ou próximo a "'21'"
+LINE 4: AND a.matricula BETWEEN '1' AND '10' OR BETWEEN '21' AND '30...
+                                                        ^
+2016-08-11 15:34:35 ERROR  : ERRO:  coluna "e.empresa" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT e.empresa,e.periodo, e.meta, AVG(a.nota) media
+               ^
+2016-08-11 15:37:40 ERROR  : ERRO:  coluna "e.periodo" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT e.periodo, e.meta, AVG(a.nota) media
+               ^
+2016-08-11 15:46:34 ERROR  : ERRO:  erro de sintaxe no fim da entrada
+LINE 8: ORDER BY periodo
+                        ^
+2016-08-11 15:48:06 ERROR  : ERRO:  relação "c1" não existe
+LINE 1: select c1.empresa from c1
+                               ^
+2016-08-11 15:48:12 ERROR  : ERRO:  erro de sintaxe em ou próximo a "c1"
+LINE 1: c1 = SELECT e.empresa, e.periodo, e.meta, AVG(a.nota) media
+        ^
+2016-08-11 15:55:51 ERROR  : ERRO:  relação "emp_metas" não existe
+LINE 2: select empresa from emp_metas WHERE empresa ='global'
+                            ^
+2016-08-11 16:13:23 ERROR  : ERRO:  faltando entrada para tabela "emp_metas" na cláusula FROM
+LINE 1: SELECT emp_metas.empresa,e.periodo, e.meta, AVG(a.nota) medi...
+               ^
+2016-08-11 16:13:52 ERROR  : ERRO:  faltando entrada para tabela "emp_metas" na cláusula FROM
+LINE 3: WHERE emp_metas.empresa ='global '
+              ^
+2016-08-11 16:47:00 ERROR  : ERRO:  coluna aval.empresa não existe
+LINE 1: SELECT aval.empresa FROM teste.aval,teste.pessoas WHERE aval...
+               ^
+2016-08-11 17:01:53 ERROR  : ERRO:  erro de sintaxe no fim da entrada
+LINE 5: 
+        ^
+2016-08-11 17:02:07 ERROR  : ERRO:  coluna "e.empresa" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT e.empresa,e.periodo,e.meta ,AVG(a.nota)
+               ^
+2016-08-11 17:03:07 ERROR  : ERRO:  coluna "e.empresa" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT e.empresa,a.periodo,e.meta ,AVG(a.nota)
+               ^
+2016-08-11 17:03:34 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
+2016-08-11 17:03:58 ERROR  : ERRO:  erro de sintaxe em ou próximo a "ELECT"
+LINE 1: ELECT pessoas.matricula FROM teste.pessoas WHERE pessoas.emp...
+        ^
+2016-08-11 17:06:08 ERROR  : ERRO:  coluna "p.empresa" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT p.empresa,a.periodo,e.meta ,AVG(a.nota)
+               ^
+2016-08-11 17:06:58 ERROR  : ERRO:  coluna "p.empresa" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT p.empresa,a.periodo,e.meta ,AVG(a.nota)
+               ^
+2016-08-11 17:07:04 ERROR  : ERRO:  coluna "p.empresa" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 1: SELECT p.empresa,a.periodo,e.meta ,AVG(a.nota)
+               ^
+2016-08-11 17:09:04 ERROR  : ERRO:  erro de sintaxe em ou próximo a "DISTINCT"
+LINE 1: SELECT p.empresa,a.periodo,DISTINCT e.meta ,AVG(a.nota)
+                                   ^
+2016-08-12 11:33:13 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-08-12 11:34:03 ERROR  : ERRO:  tipo "avg" não existe
+LINE 1: SELECT p.empresa,a.periodo, e.meta ,AVG(a.nota) 'media alcan...
+                                            ^
+2016-08-12 11:34:17 ERROR  : ERRO:  erro de sintaxe em ou próximo a "'media alcanÃ§ada'"
+LINE 1: SELECT p.empresa,a.periodo, e.meta ,AVG(a.nota)as 'media alc...
+                                                          ^
+2016-08-12 11:36:26 ERROR  : ERRO:  faltando entrada para tabela "d" na cláusula FROM
+LINE 2: SELECT p.empresa,a.periodo, d.meta ,AVG(a.nota) media
+                                    ^
+2016-08-12 11:40:23 ERROR  : ERRO:  coluna "d.departamento" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 3: SELECT p.empresa, d.departamento, a.periodo, d.meta ,AVG(a.n...
+                          ^
+2016-08-12 11:50:13 ERROR  : ERRO:  erro de sintaxe em ou próximo a "dep_metas"
+LINE 7: AND dep_metas.departamento IN dep_metas.departamento )
+                                      ^
+2016-08-12 11:57:51 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-08-12 12:01:06 ERROR  : ERRO:  erro de sintaxe em ou próximo a "global"
+LINE 5: AND p.empresa = 'global'
+                         ^
+2016-08-12 12:04:23 ERROR  : ERRO:  erro de sintaxe no fim da entrada
+LINE 12: ORDER BY a.periodo
+                           ^
+2016-08-12 12:14:39 ERROR  : ERRO:  mais de um registro foi retornado por uma subconsulta utilizada como uma expressão
